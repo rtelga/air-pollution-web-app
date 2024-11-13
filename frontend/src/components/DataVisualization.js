@@ -13,7 +13,7 @@ function PollutantSelection({listPollutants, callback}){
         return (
             <>
                 <label>
-			        <input 
+                    <input 
                         type="radio"
                         value={p}
                         checked={this.state.selectedOption === listPollutants[0]}

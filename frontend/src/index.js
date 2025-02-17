@@ -1,17 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
-import Header from './Header.js';
-import Map from './Map.js';
+import InteractiveMap from './components/InteractiveMap.js';
 
 function App() {
   return (
     <React.StrictMode>
-      <Header />
-      <Map />
+      <InteractiveMap />
     </React.StrictMode>
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(<App />);
